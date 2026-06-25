@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>매뉴얼등록 상세 - 프로토타입</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Malgun Gothic', '맑은 고딕', sans-serif;
+      font-size: 13px;
+      background: #f5f5f5;
+      padding: 24px;
+      color: #333;
+    }
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      background: #fff;
+      border: 1px solid #ddd;
+      border-radius: 6px;
+      padding: 20px;
+    }
+    .page-title {
+      font-size: 15px;
+      font-weight: 600;
+      color: #3f3a8f;
+      border-left: 3px solid #534AB7;
+      padding-left: 10px;
+      margin-bottom: 16px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      table-layout: fixed;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      overflow: hidden;
+    }
+    td {
+      border: 0.5px solid #ddd;
+      vertical-align: middle;
+      padding: 8px 12px;
+    }
+    td.label {
+      background: #f0f0f0;
+      color: #555;
+      white-space: nowrap;
+      width: 90px;
+      font-weight: 500;
+    }
+    td.label-narrow {
+      background: #f0f0f0;
+      color: #555;
+      white-space: nowrap;
+      width: 70px;
+      font-weight: 500;
+    }
+    input[type="text"], select, textarea {
+      width: 100%;
+      padding: 5px 8px;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+      font-size: 13px;
+      font-family: inherit;
+      color: #333;
+      background: #fff;
+    }
+    input:disabled, select:disabled {
+      background: #f0f0f0;
+      color: #777;
+      cursor: not-allowed;
+    }
+    textarea {
+      height: 160px;
+      resize: vertical;
+    }
+    .required { color: #d9534f; margin-right: 2px; }
+    .inner-table {
+      width: 100%;
+      border-collapse: collapse;
+      table-layout: fixed;
+      border: none;
+    }
+    .inner-table td {
+      border: none;
+      border-right: 0.5px solid #ddd;
+      padding: 6px 10px;
+    }
+    .inner-table td:last-child { border-right: none; }
+    .inner-table td.inner-label {
+      background: #f0f0f0;
+      color: #555;
+      white-space: nowrap;
+      width: 50px;
+      font-weight: 500;
+    }
+    .btn {
+      padding: 5px 14px;
+      border: 1px solid #999;
+      border-radius: 3px;
+      background: #fff;
+      font-size: 12px;
+      cursor: pointer;
+      font-family: inherit;
+    }
+    .btn:hover { background: #f5f5f5; }
+    .btn-primary {
+      background: #534AB7;
+      color: #fff;
+      border: none;
+      padding: 7px 32px;
+      border-radius: 4px;
+      font-size: 14px;
+      cursor: pointer;
+      font-family: inherit;
+    }
+    .btn-primary:hover { background: #443a9a; }
+    .btn-register {
+      background: #534AB7;
+      color: #fff;
+      border: none;
+      padding: 5px 14px;
+      border-radius: 3px;
+      font-size: 13px;
+      cursor: pointer;
+      white-space: nowrap;
+      font-family: inherit;
+    }
+    .footer-btn { display: flex; justify-content: center; margin-top: 20px; }
+    .comment-wrap { display: flex; gap: 8px; align-items: center; }
+    .comment-wrap input { flex: 1; }
+    .prototype-badge {
+      display: inline-block;
+      background: #fff3cd;
+      color: #856404;
+      border: 1px solid #ffc107;
+      border-radius: 3px;
+      font-size: 11px;
+      padding: 2px 8px;
+      margin-bottom: 12px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="prototype-badge">📐 프로토타입 — 디자인/개발팀 검토용</div>
+    <div class="page-title">매뉴얼등록 상세</div>
+
+    <table>
+      <colgroup>
+        <col style="width: 90px;" />
+        <col style="width: 22%;" />
+        <col style="width: 70px;" />
+        <col />
+      </colgroup>
+
+      <tr>
+        <td class="label">회사명</td>
+        <td>
+          <input type="text" value="(주)스마트하우징" disabled />
+        </td>
+        <td class="label-narrow">단지명</td>
+        <td>
+          <select disabled>
+            <option value="">선택</option>
+            <option>래미안 퍼스티지</option>
+            <option>힐스테이트 센트럴</option>
+            <option>자이 더 스카이</option>
+          </select>
+        </td>
+      </tr>
+
+      <tr>
+        <td class="label"><span class="required">*</span>매뉴얼명</td>
+        <td>
+          <input type="text" placeholder="" />
+        </td>
+        <td class="label-narrow">작성자</td>
+        <td style="padding: 0;">
+          <table class="inner-table">
+            <tr>
+              <td style="width: 50%;">
+                <input type="text" value="김재훈" disabled />
+              </td>
+              <td class="inner-label">공유</td>
+              <td>
+                <select>
+                  <option>전체 공유</option>
+                  <option>부서 공유</option>
+                  <option>비공개</option>
+                </select>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+
+      <tr>
+        <td class="label" style="vertical-align: top; padding-top: 12px;">매뉴얼 내용</td>
+        <td colspan="3">
+          <textarea></textarea>
+        </td>
+      </tr>
+
+      <tr>
+        <td class="label">파일</td>
+        <td colspan="3">
+          <button class="btn">파일첨부</button>
+        </td>
+      </tr>
+
+      <tr>
+        <td class="label">추가정보/댓글</td>
+        <td colspan="3"></td>
+      </tr>
+
+      <tr>
+        <td class="label">댓글 입력</td>
+        <td colspan="3">
+          <div class="comment-wrap">
+            <input type="text" />
+            <button class="btn-register">등록</button>
+          </div>
+        </td>
+      </tr>
+    </table>
+
+    <div class="footer-btn">
+      <button class="btn-primary">저장</button>
+    </div>
+  </div>
+</body>
+</html>
