@@ -1,0 +1,1448 @@
+/* ============================================================
+ * modulor.css — Modulor Design System prototype tokens
+ * AUTO-GENERATED from tokens.json (Figma variables export).
+ * 용도: 기획 리뷰/시연용 HTML 프로토타입의 "룩" 재현.
+ * 정식 시안은 반드시 피그마 실컴포넌트로 조립할 것.
+ * 사용법: <body data-product="modulor|homedot|ra|rd|rtb">
+ * ============================================================ */
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
+
+:root {
+  --font-family: "Pretendard", -apple-system, sans-serif;
+  --space-0: 0px;
+  --space-050: 2px;
+  --space-100: 4px;
+  --space-150: 8px;
+  --space-200: 12px;
+  --space-250: 16px;
+  --space-300: 20px;
+  --space-350: 24px;
+  --space-400: 28px;
+  --space-450: 32px;
+  --space-500: 36px;
+  --space-550: 40px;
+  --space-600: 44px;
+  --space-650: 48px;
+  --space-700: 56px;
+  --space-750: 64px;
+  --space-800: 80px;
+  --space-125: 6px;
+  --radius-none: 0px;
+  --radius-xs: 4px;
+  --radius-sm: 6px;
+  --radius-md: 8px;
+  --radius-lg: 16px;
+  --radius-xl: 24px;
+  --radius-f-c: 999px;
+  --shadow-elevation-small: 0px 2px 8px 0px rgba(42,48,56,0.10);
+  --shadow-elevation-medium: 0px 2px 10px 0px rgba(42,48,56,0.20);
+  --shadow-elevation-large: 0px 8px 24px 0px rgba(42,48,56,0.20);
+  --shadow-elevation-x-large: 0px 8px 32px 0px rgba(42,48,56,0.30);
+  --shadow-focus: 0px 0px 0px 2px #f4ebff;
+  --shadow-destructive-focus: 0px 0px 0px 2px #ffe4e8;
+  --font-size-xxs: 12px;
+  --font-size-xs: 14px;
+  --font-size-sm: 16px;
+  --font-size-md: 20px;
+  --font-size-lg: 24px;
+  --font-size-xl: 28px;
+  --font-size-2xl: 32px;
+  --font-size-3xl: 40px;
+  --font-size-4xl: 48px;
+  --font-size-5xl: 56px;
+  --font-line-height-xxs: 19px;
+  --font-line-height-xs: 22px;
+  --font-line-height-sm: 26px;
+  --font-line-height-md: 32px;
+  --font-line-height-lg: 38px;
+  --font-line-height-xl: 45px;
+  --font-line-height-2xl: 51px;
+  --font-line-height-3xl: 64px;
+  --font-line-height-4xl: 77px;
+  --font-line-height-5xl: 90px;
+}
+
+[data-product="modulor"], :root {
+  --badge-bg-accent: #f2ffe9;
+  --badge-bg-blue: #eef4ff;
+  --badge-bg-brand: #f4ebff;
+  --badge-bg-brand-reversal: #7f56d9;
+  --badge-bg-brand-reversal-dark: #53389e;
+  --badge-bg-brand-reversal: #7f56d9;
+  --badge-bg-brand-reversal-dark: #53389e;
+  --badge-bg-disable: #eeeff1;
+  --badge-bg-gray: #f3f4f5;
+  --badge-bg-gray-reversal: #868b94;
+  --badge-bg-gray-reversal: #868b94;
+  --badge-bg-green: #ecfdf3;
+  --badge-bg-red: #fff5f6;
+  --badge-bg-white: #ffffff;
+  --badge-bg-white-reversal: #1a1c20;
+  --badge-bg-white-reversal: #1a1c20;
+  --badge-bg-yellow: #fffaeb;
+  --badge-text-accent: #428c11;
+  --badge-text-blue: #3538cd;
+  --badge-text-brand: #53389e;
+  --badge-text-disable: #b0b3ba;
+  --badge-text-gray: #555d6d;
+  --badge-text-green: #027a48;
+  --badge-text-red: #c01048;
+  --badge-text-reversal: #ffffff;
+  --badge-text-white: #555d6d;
+  --badge-text-yellow: #dc6803;
+  --bg-accent: #6de81c;
+  --bg-accent-contrast: #428c11;
+  --bg-accent-weak: #f2ffe9;
+  --bg-control-default: #ffffff;
+  --bg-control-disable: #eeeff1;
+  --bg-control-hover: #f7f8f9;
+  --bg-control-pressed: #eeeff1;
+  --bg-control-select: #f4ebff;
+  --bg-control-select-hover: #e9d7fe;
+  --bg-control-select-pressed: #d6bbfb;
+  --bg-danger: #f63d68;
+  --bg-danger-contrast: #c01048;
+  --bg-danger-weak: #fff5f6;
+  --bg-informative: #6172f3;
+  --bg-informative-contrast: #3538cd;
+  --bg-informative-weak: #eef4ff;
+  --bg-layer-contrast: #dcdee3;
+  --bg-layer-default: #ffffff;
+  --bg-layer-fill: #f3f4f5;
+  --bg-layer-overlay: #1a1c20b3;
+  --bg-nav-bg: #ffffff;
+  --bg-nav-bg-50: #ffffff80;
+  --bg-nav-dropdown: #f7f8f9;
+  --bg-nav-hover: #f7f8f9;
+  --bg-nav-select: #f7f8f9;
+  --bg-nav-select-hover: #f3f4f5;
+  --bg-neutral-default: #2a3038;
+  --bg-neutral-disable: #d1d3d8;
+  --bg-neutral-disable-weak: #eeeff1;
+  --bg-neutral-muted: #555d6d;
+  --bg-neutral-weak: #f3f4f5;
+  --bg-persistenttab-bg: #f7f8f9;
+  --bg-persistenttab-hover: #eeeff1;
+  --bg-positive: #12b76a;
+  --bg-positive-contrast: #027a48;
+  --bg-positive-weak: #ecfdf3;
+  --bg-primary: #7f56d9;
+  --bg-primary-contrast: #53389e;
+  --bg-primary-weak: #f4ebff;
+  --bg-radio-default: #ffffff;
+  --bg-radio-hover: #f7f8f9;
+  --bg-radio-select-hover: #f9f5ff;
+  --bg-secondary: #555d6d;
+  --bg-secondary-contrast: #1a1c20;
+  --bg-secondary-weak: #f7f8f9;
+  --bg-tile: #f7f8f9;
+  --bg-warning: #fdb022;
+  --bg-warning-contrast: #dc6803;
+  --bg-warning-weak: #fffaeb;
+  --border-accent: #6de81c;
+  --border-accent-weak: #f7f8f9;
+  --border-danger: #f63d68;
+  --border-danger-weak: #ffe4e8;
+  --border-default: #dcdee3;
+  --border-disable: #d1d3d8;
+  --border-focus: #f4ebff;
+  --border-focus-destructive: #ffe4e8;
+  --border-informative: #6172f3;
+  --border-informative-weak: #e0eaff;
+  --border-muted: #eeeff1;
+  --border-positive: #12b76a;
+  --border-positive-weak: #d1fadf;
+  --border-primary: #7f56d9;
+  --border-secondary: #555d6d;
+  --border-strong: #868b94;
+  --border-warning: #fdb022;
+  --border-warning-weak: #fef0c7;
+  --button-accent-default: #6de81c;
+  --button-accent-hover: #55b516;
+  --button-accent-press: #428c11;
+  --button-button-group-active: #7f56d9;
+  --button-button-group-default: #eeeff1;
+  --button-button-group-disable: #f7f8f9;
+  --button-button-group-hover: #dcdee3;
+  --button-button-group-pressed: #d1d3d8;
+  --button-destructive-outline-default: #ffffff;
+  --button-destructive-outline-hover: #fff5f6;
+  --button-destructive-outline-pressed: #ffe4e8;
+  --button-destructive-default: #f63d68;
+  --button-destructive-hover: #c01048;
+  --button-destructive-pressed: #c01048;
+  --button-disable: #d1d3d8;
+  --button-gray-active: #7f56d9;
+  --button-gray-default: #eeeff1;
+  --button-gray-disable: #f7f8f9;
+  --button-gray-hover: #dcdee3;
+  --button-gray-pressed: #d1d3d8;
+  --button-primary-outline-default: #ffffff;
+  --button-primary-outline-hover: #f9f5ff;
+  --button-primary-outline-pressed: #f4ebff;
+  --button-primary-default: #7f56d9;
+  --button-primary-hover: #6941c6;
+  --button-primary-pressed: #53389e;
+  --button-secondary-outline-default: #ffffff;
+  --button-secondary-outline-hover: #f7f8f9;
+  --button-secondary-outline-pressed: #eeeff1;
+  --button-secondary-default: #1a1c20;
+  --button-secondary-hover: #2a3038;
+  --button-secondary-pressed: #555d6d;
+  --button-tertiary-default: #1a1c2000;
+  --button-tertiary-hover: #f3f4f5;
+  --button-tertiary-pressed: #eeeff1;
+  --chart-15: #6ce9a6;
+  --chart-data-02: #fffaeb;
+  --fg-accent: #6de81c;
+  --fg-accent-contrast: #428c11;
+  --fg-accent-weak: #d5ffba;
+  --fg-control-default: #ffffff;
+  --fg-control-destructive: #f63d68;
+  --fg-control-selected: #7f56d9;
+  --fg-danger: #f63d68;
+  --fg-danger-contrast: #c01048;
+  --fg-informative: #6172f3;
+  --fg-informative-contrast: #3538cd;
+  --fg-neutral-default: #2a3038;
+  --fg-neutral-disable: #d1d3d8;
+  --fg-neutral-muted: #555d6d;
+  --fg-neutral-weak: #f3f4f5;
+  --fg-positive: #12b76a;
+  --fg-positive-contrast: #027a48;
+  --fg-primary: #7f56d9;
+  --fg-primary-contrast: #53389e;
+  --fg-primary-weak: #f9f5ff;
+  --fg-secondary: #555d6d;
+  --fg-secondary-contrast: #1a1c20;
+  --fg-secondary-weak: #f7f8f9;
+  --fg-select-selected: #6de81c;
+  --fg-text-alternative: #868b94;
+  --fg-text-assistive: #b0b3ba;
+  --fg-text-contrast: #1a1c20;
+  --fg-text-default: #555d6d;
+  --fg-text-disable: #b0b3ba;
+  --fg-text-white: #ffffff;
+  --fg-toggle-default: #dcdee3;
+  --fg-toggle-hover: #d1d3d8;
+  --fg-toggle-press: #7f56d9;
+  --fg-toggle-press-hover: #7f56d9;
+  --fg-warning: #fdb022;
+  --fg-warning-contrast: #dc6803;
+  --fg-white: #ffffff;
+  --icon-accent: #428c11;
+  --icon-accent-contrast: #428c11;
+  --icon-control-disabled: #eeeff1;
+  --icon-control-selected: #7f56d9;
+  --icon-control-selected-hover: #53389e;
+  --icon-danger: #f63d68;
+  --icon-danger-contrast: #c01048;
+  --icon-default: #555d6d;
+  --icon-disabled: #d1d3d8;
+  --icon-informative: #6172f3;
+  --icon-informative-contrast: #3538cd;
+  --icon-muted: #868b94;
+  --icon-positive: #12b76a;
+  --icon-positive-contrast: #027a48;
+  --icon-primary: #7f56d9;
+  --icon-primary-contrast: #53389e;
+  --icon-secondary: #555d6d;
+  --icon-warning: #fdb022;
+  --icon-warning-contrast: #dc6803;
+  --icon-weak: #dcdee3;
+  --icon-white: #ffffff;
+  --pagination-bg: #ffffff80;
+  --pagination-bg-sticky: #ffffff;
+  --pagination-default: #1a1c2000;
+  --pagination-dot-primary-active: #7f56d9;
+  --pagination-dot-primary-default: #f3f4f5;
+  --pagination-dot-white-active: #ffffff;
+  --pagination-dot-white-default: #ffffff80;
+  --pagination-hover: #f7f8f9;
+  --pagination-press: #eeeff1;
+  --pagination-select: #f3f4f5;
+  --table-header: #f3f4f5;
+  --table-hover: #f7f8f9;
+  --table-select: #f4ebff;
+  --table-subtotal: #f7f8f9;
+  --table-total: #eeeff1;
+  --table-total-text: #7f56d9;
+  --utility-accent: #c1ff98;
+  --utility-brand: #e9d7fe;
+  --utility-danger: #fecdd6;
+  --utility-gray: #dcdee3;
+  --utility-info: #e0eaff;
+  --utility-reversal: #1a1c2033;
+  --utility-success: #d1fadf;
+  --utility-teal: #ffffff;
+  --utility-warning: #fef0c7;
+  --utility-white: #f7f8f9;
+  --border-divider-weight: 0px;
+}
+
+[data-product="homedot"] {
+  --badge-bg-accent: #dff6f6;
+  --badge-bg-blue: #e2f3ff;
+  --badge-bg-brand: #f4f2fe;
+  --badge-bg-brand-reversal: #5534e1;
+  --badge-bg-brand-reversal-dark: #351f9e;
+  --badge-bg-brand-reversal: #5534e1;
+  --badge-bg-brand-reversal-dark: #351f9e;
+  --badge-bg-disable: #eeeff1;
+  --badge-bg-gray: #f3f4f5;
+  --badge-bg-gray-reversal: #868b94;
+  --badge-bg-gray-reversal: #868b94;
+  --badge-bg-green: #e5f6ec;
+  --badge-bg-red: #feecec;
+  --badge-bg-white: #ffffff;
+  --badge-bg-white-reversal: #1a1c20;
+  --badge-bg-white-reversal: #1a1c20;
+  --badge-bg-yellow: #fff8e2;
+  --badge-text-accent: #009298;
+  --badge-text-blue: #0075ff;
+  --badge-text-brand: #351f9e;
+  --badge-text-disable: #868b94;
+  --badge-text-gray: #2a3038;
+  --badge-text-green: #009153;
+  --badge-text-red: #b00c0c;
+  --badge-text-reversal: #ffffff;
+  --badge-text-white: #2a3038;
+  --badge-text-yellow: #fe9111;
+  --bg-accent: #00b7c3;
+  --bg-accent-contrast: #009298;
+  --bg-accent-weak: #dff6f6;
+  --bg-control-default: #ffffff;
+  --bg-control-disable: #eeeff1;
+  --bg-control-hover: #f7f8f9;
+  --bg-control-pressed: #eeeff1;
+  --bg-control-select: #f4f2fe;
+  --bg-control-select-hover: #e6e0fd;
+  --bg-control-select-pressed: #cfc4fb;
+  --bg-danger: #ff4242;
+  --bg-danger-contrast: #b00c0c;
+  --bg-danger-weak: #feecec;
+  --bg-informative: #0099ff;
+  --bg-informative-contrast: #0075ff;
+  --bg-informative-weak: #e2f3ff;
+  --bg-layer-contrast: #dcdee3;
+  --bg-layer-default: #ffffff;
+  --bg-layer-fill: #f3f4f5;
+  --bg-layer-overlay: #1a1c20b3;
+  --bg-nav-bg: #ffffff;
+  --bg-nav-bg-50: #ffffff80;
+  --bg-nav-dropdown: #f7f8f9;
+  --bg-nav-hover: #f7f8f9;
+  --bg-nav-select: #f7f8f9;
+  --bg-nav-select-hover: #f3f4f5;
+  --bg-neutral-default: #2a3038;
+  --bg-neutral-disable: #d1d3d8;
+  --bg-neutral-disable-weak: #eeeff1;
+  --bg-neutral-muted: #555d6d;
+  --bg-neutral-weak: #f3f4f5;
+  --bg-persistenttab-bg: #f7f8f9;
+  --bg-persistenttab-hover: #eeeff1;
+  --bg-positive: #17b26a;
+  --bg-positive-contrast: #009153;
+  --bg-positive-weak: #e5f6ec;
+  --bg-primary: #5534e1;
+  --bg-primary-contrast: #351f9e;
+  --bg-primary-weak: #f4f2fe;
+  --bg-radio-default: #ffffff;
+  --bg-radio-hover: #f7f8f9;
+  --bg-radio-select-hover: #f4f2fe;
+  --bg-secondary: #23d35e;
+  --bg-secondary-contrast: #00a624;
+  --bg-secondary-weak: #f1fff4;
+  --bg-tile: #f7f8f9;
+  --bg-warning: #ffb515;
+  --bg-warning-contrast: #fe9111;
+  --bg-warning-weak: #fff8e2;
+  --border-accent: #00b7c3;
+  --border-accent-weak: #dff6f6;
+  --border-danger: #ff4242;
+  --border-danger-weak: #fed5d5;
+  --border-default: #dcdee3;
+  --border-disable: #d1d3d8;
+  --border-focus: #e6e0fd;
+  --border-focus-destructive: #fed5d5;
+  --border-informative: #0099ff;
+  --border-informative-weak: #b9e1ff;
+  --border-muted: #eeeff1;
+  --border-positive: #17b26a;
+  --border-positive-weak: #c1e7d1;
+  --border-primary: #5534e1;
+  --border-secondary: #23d35e;
+  --border-strong: #868b94;
+  --border-warning: #ffb515;
+  --border-warning-weak: #ffecb5;
+  --button-accent-default: #00b7c3;
+  --button-accent-hover: #00a7b1;
+  --button-accent-press: #009298;
+  --button-button-group-active: #5534e1;
+  --button-button-group-default: #eeeff1;
+  --button-button-group-disable: #f7f8f9;
+  --button-button-group-hover: #dcdee3;
+  --button-button-group-pressed: #d1d3d8;
+  --button-destructive-outline-default: #ffffff;
+  --button-destructive-outline-hover: #fffafa;
+  --button-destructive-outline-pressed: #feecec;
+  --button-destructive-default: #ff4242;
+  --button-destructive-hover: #e52222;
+  --button-destructive-pressed: #b00c0c;
+  --button-disable: #d1d3d8;
+  --button-gray-active: #5534e1;
+  --button-gray-default: #dcdee3;
+  --button-gray-disable: #f7f8f9;
+  --button-gray-hover: #d1d3d8;
+  --button-gray-pressed: #b0b3ba;
+  --button-primary-outline-default: #ffffff;
+  --button-primary-outline-hover: #f4f2fe;
+  --button-primary-outline-pressed: #e6e0fd;
+  --button-primary-default: #5534e1;
+  --button-primary-hover: #4529c0;
+  --button-primary-pressed: #351f9e;
+  --button-secondary-outline-default: #ffffff;
+  --button-secondary-outline-hover: #f7f8f9;
+  --button-secondary-outline-pressed: #eeeff1;
+  --button-secondary-default: #1a1c20;
+  --button-secondary-hover: #2a3038;
+  --button-secondary-pressed: #555d6d;
+  --button-tertiary-default: #1a1c2000;
+  --button-tertiary-hover: #f3f4f5;
+  --button-tertiary-pressed: #eeeff1;
+  --chart-01: #ffffff;
+  --chart-02: #ffffff;
+  --chart-03: #ffffff;
+  --chart-04: #ffffff;
+  --chart-05: #ffffff;
+  --chart-06: #ffffff;
+  --chart-07: #ffffff;
+  --chart-08: #ffffff;
+  --chart-09: #ffffff;
+  --chart-10: #ffffff;
+  --chart-11: #ffffff;
+  --chart-12: #ffffff;
+  --chart-13: #ffffff;
+  --chart-14: #ffffff;
+  --chart-15: #ffffff;
+  --chart-16: #ffffff;
+  --chart-17: #ffffff;
+  --chart-18: #ffffff;
+  --chart-19: #ffffff;
+  --chart-20: #ffffff;
+  --chart-data-02: #ffffff;
+  --chart-data-03: #ffffff;
+  --fg-accent: #00b7c3;
+  --fg-accent-contrast: #009298;
+  --fg-accent-weak: #dff6f6;
+  --fg-control-default: #ffffff;
+  --fg-control-destructive: #ff4242;
+  --fg-control-selected: #5534e1;
+  --fg-danger: #ff4242;
+  --fg-danger-contrast: #b00c0c;
+  --fg-informative: #0099ff;
+  --fg-informative-contrast: #0075ff;
+  --fg-neutral-default: #2a3038;
+  --fg-neutral-disable: #d1d3d8;
+  --fg-neutral-muted: #555d6d;
+  --fg-neutral-weak: #f3f4f5;
+  --fg-positive: #17b26a;
+  --fg-positive-contrast: #009153;
+  --fg-primary: #5534e1;
+  --fg-primary-contrast: #351f9e;
+  --fg-primary-weak: #f4f2fe;
+  --fg-secondary: #23d35e;
+  --fg-secondary-contrast: #00a624;
+  --fg-secondary-weak: #f1fff4;
+  --fg-select-selected: #00b7c3;
+  --fg-text-alternative: #555d6d;
+  --fg-text-assistive: #868b94;
+  --fg-text-contrast: #1a1c20;
+  --fg-text-default: #2a3038;
+  --fg-text-disable: #868b94;
+  --fg-text-white: #ffffff;
+  --fg-toggle-default: #dcdee3;
+  --fg-toggle-hover: #d1d3d8;
+  --fg-toggle-press: #5534e1;
+  --fg-toggle-press-hover: #4529c0;
+  --fg-warning: #ffb515;
+  --fg-warning-contrast: #fe9111;
+  --fg-white: #ffffff;
+  --icon-accent: #00b7c3;
+  --icon-accent-contrast: #009298;
+  --icon-control-disabled: #eeeff1;
+  --icon-control-selected: #5534e1;
+  --icon-control-selected-hover: #351f9e;
+  --icon-danger: #ff4242;
+  --icon-danger-contrast: #b00c0c;
+  --icon-default: #555d6d;
+  --icon-disabled: #d1d3d8;
+  --icon-informative: #0099ff;
+  --icon-informative-contrast: #0075ff;
+  --icon-muted: #868b94;
+  --icon-positive: #17b26a;
+  --icon-positive-contrast: #009153;
+  --icon-primary: #5534e1;
+  --icon-primary-contrast: #351f9e;
+  --icon-secondary: #23d35e;
+  --icon-warning: #ffb515;
+  --icon-warning-contrast: #fe9111;
+  --icon-weak: #dcdee3;
+  --icon-white: #ffffff;
+  --pagination-bg: #ffffff80;
+  --pagination-bg-sticky: #ffffff;
+  --pagination-default: #1a1c2000;
+  --pagination-dot-primary-active: #5534e1;
+  --pagination-dot-primary-default: #f3f4f5;
+  --pagination-dot-white-active: #ffffff;
+  --pagination-dot-white-default: #ffffff80;
+  --pagination-hover: #f7f8f9;
+  --pagination-press: #eeeff1;
+  --pagination-select: #f3f4f5;
+  --table-header: #f3f4f5;
+  --table-hover: #f7f8f9;
+  --table-select: #f4f2fe;
+  --table-subtotal: #fff8e2;
+  --table-total: #ffecb5;
+  --table-total-text: #fe720d;
+  --utility-accent: #afeaea;
+  --utility-brand: #e6e0fd;
+  --utility-danger: #fed5d5;
+  --utility-gray: #dcdee3;
+  --utility-info: #b9e1ff;
+  --utility-reversal: #1a1c2033;
+  --utility-success: #c1e7d1;
+  --utility-teal: #afeaea;
+  --utility-warning: #ffecb5;
+  --utility-white: #f7f8f9;
+  --border-divider-weight: 0px;
+}
+
+[data-product="ra"] {
+  --badge-bg-accent: #f1fffe;
+  --badge-bg-blue: #f3f6ff;
+  --badge-bg-brand: #f6f4ff;
+  --badge-bg-brand-reversal: #8870ed;
+  --badge-bg-brand-reversal-dark: #382194;
+  --badge-bg-brand-reversal: #8870ed;
+  --badge-bg-brand-reversal-dark: #382194;
+  --badge-bg-disable: #eeeff1;
+  --badge-bg-gray: #f3f4f5;
+  --badge-bg-gray-reversal: #868b94;
+  --badge-bg-gray-reversal: #868b94;
+  --badge-bg-green: #f1fffe;
+  --badge-bg-red: #ffeaec;
+  --badge-bg-white: #ffffff;
+  --badge-bg-white-reversal: #1a1c20;
+  --badge-bg-white-reversal: #1a1c20;
+  --badge-bg-yellow: #fff9e1;
+  --badge-text-accent: #06625c;
+  --badge-text-blue: #3c67d8;
+  --badge-text-brand: #382194;
+  --badge-text-disable: #555d6d;
+  --badge-text-gray: #555d6d;
+  --badge-text-green: #098d7d;
+  --badge-text-red: #c80516;
+  --badge-text-reversal: #ffffff;
+  --badge-text-white: #555d6d;
+  --badge-text-yellow: #ff9300;
+  --bg-accent: #31c4b2;
+  --bg-accent-contrast: #06625c;
+  --bg-accent-weak: #f1fffe;
+  --bg-control-default: #ffffff;
+  --bg-control-disable: #eeeff1;
+  --bg-control-hover: #f7f8f9;
+  --bg-control-pressed: #eeeff1;
+  --bg-control-select: #f6f4ff;
+  --bg-control-select-hover: #f1eeff;
+  --bg-control-select-pressed: #e8e3ff;
+  --bg-danger: #e62323;
+  --bg-danger-contrast: #c80516;
+  --bg-danger-weak: #ffeaec;
+  --bg-informative: #0099ff;
+  --bg-informative-contrast: #0075ff;
+  --bg-informative-weak: #e2f3ff;
+  --bg-layer-contrast: #dcdee3;
+  --bg-layer-default: #ffffff;
+  --bg-layer-fill: #f3f4f5;
+  --bg-layer-overlay: #1a1c20b3;
+  --bg-nav-bg: #ffffff;
+  --bg-nav-bg-50: #ffffff80;
+  --bg-nav-dropdown: #f7f8f9;
+  --bg-nav-hover: #f7f8f9;
+  --bg-nav-select: #f7f8f9;
+  --bg-nav-select-hover: #f3f4f5;
+  --bg-neutral-default: #2a3038;
+  --bg-neutral-disable: #d1d3d8;
+  --bg-neutral-disable-weak: #eeeff1;
+  --bg-neutral-muted: #555d6d;
+  --bg-neutral-weak: #f3f4f5;
+  --bg-persistenttab-bg: #f7f8f9;
+  --bg-persistenttab-hover: #eeeff1;
+  --bg-positive: #17b26a;
+  --bg-positive-contrast: #009153;
+  --bg-positive-weak: #e5f6ec;
+  --bg-primary: #5e44cb;
+  --bg-primary-contrast: #382194;
+  --bg-primary-weak: #f9f8ff;
+  --bg-radio-default: #ffffff;
+  --bg-radio-hover: #f7f8f9;
+  --bg-radio-select-hover: #f9f8ff;
+  --bg-secondary: #23449a;
+  --bg-secondary-contrast: #182f6b;
+  --bg-secondary-weak: #f3f6ff;
+  --bg-tile: #f7f8f9;
+  --bg-warning: #ffce1e;
+  --bg-warning-contrast: #ff9300;
+  --bg-warning-weak: #fff9e1;
+  --border-accent: #098d7d;
+  --border-accent-weak: #f1fffe;
+  --border-danger: #e62323;
+  --border-danger-weak: #ffcace;
+  --border-default: #dcdee3;
+  --border-disable: #d1d3d8;
+  --border-focus: #f6f4ff;
+  --border-focus-destructive: #ffcace;
+  --border-informative: #0099ff;
+  --border-informative-weak: #b9e1ff;
+  --border-muted: #eeeff1;
+  --border-positive: #17b26a;
+  --border-positive-weak: #c1e7d1;
+  --border-primary: #5e44cb;
+  --border-secondary: #3c67d8;
+  --border-strong: #868b94;
+  --border-warning: #ffce1e;
+  --border-warning-weak: #ffeeb2;
+  --button-accent-default: #31c4b2;
+  --button-accent-hover: #098d7d;
+  --button-accent-press: #06625c;
+  --button-button-group-active: #5e44cb;
+  --button-button-group-default: #eeeff1;
+  --button-button-group-disable: #f7f8f9;
+  --button-button-group-hover: #dcdee3;
+  --button-button-group-pressed: #d1d3d8;
+  --button-destructive-outline-default: #ffffff;
+  --button-destructive-outline-hover: #ffeaec;
+  --button-destructive-outline-pressed: #ffcace;
+  --button-destructive-default: #e62323;
+  --button-destructive-hover: #d4141e;
+  --button-destructive-pressed: #c80516;
+  --button-disable: #d1d3d8;
+  --button-gray-active: #5e44cb;
+  --button-gray-default: #eeeff1;
+  --button-gray-disable: #f7f8f9;
+  --button-gray-hover: #dcdee3;
+  --button-gray-pressed: #d1d3d8;
+  --button-primary-outline-default: #ffffff;
+  --button-primary-outline-hover: #f9f8ff;
+  --button-primary-outline-pressed: #f6f4ff;
+  --button-primary-default: #5e44cb;
+  --button-primary-hover: #382194;
+  --button-primary-pressed: #382194;
+  --button-secondary-outline-default: #ffffff;
+  --button-secondary-outline-hover: #f7f8f9;
+  --button-secondary-outline-pressed: #eeeff1;
+  --button-secondary-default: #1a1c20;
+  --button-secondary-hover: #2a3038;
+  --button-secondary-pressed: #555d6d;
+  --button-tertiary-default: #1a1c2000;
+  --button-tertiary-hover: #f3f4f5;
+  --button-tertiary-pressed: #eeeff1;
+  --chart-01: #8361f7;
+  --chart-02: #348ce2;
+  --chart-03: #f097ce;
+  --chart-04: #d18bed;
+  --chart-05: #b19bfb;
+  --chart-06: #8c90eb;
+  --chart-07: #83b7eb;
+  --chart-08: #67a4fb;
+  --chart-09: #437bc8;
+  --chart-10: #4e6bcc;
+  --chart-11: #2c5288;
+  --chart-12: #166c9d;
+  --chart-13: #349cac;
+  --chart-14: #25ae90;
+  --chart-15: #6dc996;
+  --chart-16: #5cb6d7;
+  --chart-17: #7fc0c0;
+  --chart-18: #e663b4;
+  --chart-19: #ac65ea;
+  --chart-20: #9a46e4;
+  --chart-data-02: #fff9e1;
+  --chart-data-03: #dbeef6;
+  --fg-accent: #098d7d;
+  --fg-accent-contrast: #06625c;
+  --fg-accent-weak: #f1fffe;
+  --fg-control-default: #ffffff;
+  --fg-control-destructive: #e62323;
+  --fg-control-selected: #5e44cb;
+  --fg-danger: #e62323;
+  --fg-danger-contrast: #c80516;
+  --fg-informative: #0099ff;
+  --fg-informative-contrast: #0075ff;
+  --fg-neutral-default: #2a3038;
+  --fg-neutral-disable: #d1d3d8;
+  --fg-neutral-muted: #555d6d;
+  --fg-neutral-weak: #f3f4f5;
+  --fg-positive: #17b26a;
+  --fg-positive-contrast: #009153;
+  --fg-primary: #5e44cb;
+  --fg-primary-contrast: #382194;
+  --fg-primary-weak: #f9f8ff;
+  --fg-secondary: #3c67d8;
+  --fg-secondary-contrast: #182f6b;
+  --fg-secondary-weak: #f3f6ff;
+  --fg-select-selected: #098d7d;
+  --fg-text-alternative: #868b94;
+  --fg-text-assistive: #b0b3ba;
+  --fg-text-contrast: #1a1c20;
+  --fg-text-default: #555d6d;
+  --fg-text-disable: #b0b3ba;
+  --fg-text-white: #ffffff;
+  --fg-toggle-default: #dcdee3;
+  --fg-toggle-hover: #d1d3d8;
+  --fg-toggle-press: #5e44cb;
+  --fg-toggle-press-hover: #382194;
+  --fg-warning: #ffce1e;
+  --fg-warning-contrast: #ff9300;
+  --fg-white: #ffffff;
+  --icon-accent: #098d7d;
+  --icon-accent-contrast: #06625c;
+  --icon-control-disabled: #eeeff1;
+  --icon-control-selected: #5e44cb;
+  --icon-control-selected-hover: #382194;
+  --icon-danger: #e62323;
+  --icon-danger-contrast: #c80516;
+  --icon-default: #555d6d;
+  --icon-disabled: #d1d3d8;
+  --icon-informative: #0099ff;
+  --icon-informative-contrast: #0075ff;
+  --icon-muted: #868b94;
+  --icon-positive: #17b26a;
+  --icon-positive-contrast: #009153;
+  --icon-primary: #5e44cb;
+  --icon-primary-contrast: #382194;
+  --icon-secondary: #3c67d8;
+  --icon-warning: #ffce1e;
+  --icon-warning-contrast: #ff9300;
+  --icon-weak: #dcdee3;
+  --icon-white: #ffffff;
+  --pagination-bg: #ffffff80;
+  --pagination-bg-sticky: #ffffff;
+  --pagination-default: #1a1c2000;
+  --pagination-dot-primary-active: #5e44cb;
+  --pagination-dot-primary-default: #f3f4f5;
+  --pagination-dot-white-active: #ffffff;
+  --pagination-dot-white-default: #ffffff80;
+  --pagination-hover: #f7f8f9;
+  --pagination-press: #eeeff1;
+  --pagination-select: #f3f4f5;
+  --table-header: #f3f4f5;
+  --table-hover: #f7f8f9;
+  --table-select: #f9f8ff;
+  --table-subtotal: #fff9e1;
+  --table-total: #ffeeb2;
+  --table-total-text: #ff7200;
+  --utility-accent: #bceee8;
+  --utility-brand: #e8e3ff;
+  --utility-danger: #ffcace;
+  --utility-gray: #dcdee3;
+  --utility-info: #b9e1ff;
+  --utility-reversal: #1a1c2033;
+  --utility-success: #c1e7d1;
+  --utility-teal: #ffffff;
+  --utility-warning: #ffeeb2;
+  --utility-white: #f7f8f9;
+  --border-divider-weight: 1px;
+}
+
+[data-product="rd"] {
+  --badge-bg-accent: #f7f8f9;
+  --badge-bg-blue: #f5faff;
+  --badge-bg-brand: #e3fff3;
+  --badge-bg-brand-reversal: #01b761;
+  --badge-bg-brand-reversal-dark: #006c40;
+  --badge-bg-brand-reversal: #01b761;
+  --badge-bg-brand-reversal-dark: #006c40;
+  --badge-bg-disable: #eeeff1;
+  --badge-bg-gray: #f3f4f5;
+  --badge-bg-gray-reversal: #868b94;
+  --badge-bg-gray-reversal: #868b94;
+  --badge-bg-green: #f1faf6;
+  --badge-bg-red: #fff7f8;
+  --badge-bg-white: #ffffff;
+  --badge-bg-white-reversal: #1a1c20;
+  --badge-bg-white-reversal: #1a1c20;
+  --badge-bg-yellow: #fff9e1;
+  --badge-text-accent: #1a1c20;
+  --badge-text-blue: #0366d3;
+  --badge-text-brand: #006c40;
+  --badge-text-disable: #555d6d;
+  --badge-text-gray: #555d6d;
+  --badge-text-green: #007b4b;
+  --badge-text-red: #bd0022;
+  --badge-text-reversal: #ffffff;
+  --badge-text-white: #555d6d;
+  --badge-text-yellow: #ff9300;
+  --bg-accent: #555d6d;
+  --bg-accent-contrast: #1a1c20;
+  --bg-accent-weak: #f7f8f9;
+  --bg-control-default: #ffffff;
+  --bg-control-disable: #eeeff1;
+  --bg-control-hover: #f7f8f9;
+  --bg-control-pressed: #eeeff1;
+  --bg-control-select: #e3fff3;
+  --bg-control-select-hover: #a4ffd8;
+  --bg-control-select-pressed: #65ffbe;
+  --bg-danger: #ff042f;
+  --bg-danger-contrast: #bd0022;
+  --bg-danger-weak: #fff7f8;
+  --bg-informative: #2088fc;
+  --bg-informative-contrast: #0366d3;
+  --bg-informative-weak: #f5faff;
+  --bg-layer-contrast: #dcdee3;
+  --bg-layer-default: #ffffff;
+  --bg-layer-fill: #f3f4f5;
+  --bg-layer-overlay: #1a1c20b3;
+  --bg-nav-bg: #ffffff;
+  --bg-nav-bg-50: #ffffff80;
+  --bg-nav-dropdown: #f7f8f9;
+  --bg-nav-hover: #f7f8f9;
+  --bg-nav-select: #f7f8f9;
+  --bg-nav-select-hover: #f3f4f5;
+  --bg-neutral-default: #2a3038;
+  --bg-neutral-disable: #d1d3d8;
+  --bg-neutral-disable-weak: #eeeff1;
+  --bg-neutral-muted: #555d6d;
+  --bg-neutral-weak: #f3f4f5;
+  --bg-persistenttab-bg: #f7f8f9;
+  --bg-persistenttab-hover: #eeeff1;
+  --bg-positive: #04b570;
+  --bg-positive-contrast: #007b4b;
+  --bg-positive-weak: #f1faf6;
+  --bg-primary: #01b761;
+  --bg-primary-contrast: #006c40;
+  --bg-primary-weak: #e3fff3;
+  --bg-radio-default: #ffffff;
+  --bg-radio-hover: #f7f8f9;
+  --bg-radio-select-hover: #e3fff3;
+  --bg-secondary: #e40029;
+  --bg-secondary-contrast: #5e0012;
+  --bg-secondary-weak: #ffcbd4;
+  --bg-tile: #f7f8f9;
+  --bg-warning: #ffce1e;
+  --bg-warning-contrast: #ff9300;
+  --bg-warning-weak: #fff9e1;
+  --border-accent: #555d6d;
+  --border-accent-weak: #f7f8f9;
+  --border-danger: #ff042f;
+  --border-danger-weak: #ffe3e7;
+  --border-default: #dcdee3;
+  --border-disable: #d1d3d8;
+  --border-focus: #e3fff3;
+  --border-focus-destructive: #ffcad1;
+  --border-informative: #2088fc;
+  --border-informative-weak: #bfdfff;
+  --border-muted: #eeeff1;
+  --border-positive: #04b570;
+  --border-positive-weak: #edf9f4;
+  --border-primary: #01b761;
+  --border-secondary: #e40029;
+  --border-strong: #868b94;
+  --border-warning: #ffce1e;
+  --border-warning-weak: #ffeeb2;
+  --button-accent-default: #555d6d;
+  --button-accent-hover: #2a3038;
+  --button-accent-press: #1a1c20;
+  --button-button-group-active: #01b761;
+  --button-button-group-default: #eeeff1;
+  --button-button-group-disable: #f7f8f9;
+  --button-button-group-hover: #dcdee3;
+  --button-button-group-pressed: #d1d3d8;
+  --button-destructive-outline-default: #ffffff;
+  --button-destructive-outline-hover: #fff7f8;
+  --button-destructive-outline-pressed: #fff2f4;
+  --button-destructive-default: #ff042f;
+  --button-destructive-hover: #bd0022;
+  --button-destructive-pressed: #bd0022;
+  --button-disable: #d1d3d8;
+  --button-gray-active: #01b761;
+  --button-gray-default: #eeeff1;
+  --button-gray-disable: #f7f8f9;
+  --button-gray-hover: #dcdee3;
+  --button-gray-pressed: #d1d3d8;
+  --button-primary-outline-default: #ffffff;
+  --button-primary-outline-hover: #e3fff3;
+  --button-primary-outline-pressed: #a4ffd8;
+  --button-primary-default: #01b761;
+  --button-primary-hover: #007f4b;
+  --button-primary-pressed: #006c40;
+  --button-secondary-outline-default: #ffffff;
+  --button-secondary-outline-hover: #f7f8f9;
+  --button-secondary-outline-pressed: #eeeff1;
+  --button-secondary-default: #1a1c20;
+  --button-secondary-hover: #2a3038;
+  --button-secondary-pressed: #555d6d;
+  --button-tertiary-default: #1a1c2000;
+  --button-tertiary-hover: #f3f4f5;
+  --button-tertiary-pressed: #eeeff1;
+  --chart-01: #ffffff;
+  --chart-02: #ffffff;
+  --chart-03: #ffffff;
+  --chart-04: #ffffff;
+  --chart-05: #ffffff;
+  --chart-06: #ffffff;
+  --chart-07: #ffffff;
+  --chart-08: #ffffff;
+  --chart-09: #ffffff;
+  --chart-10: #ffffff;
+  --chart-11: #ffffff;
+  --chart-12: #ffffff;
+  --chart-13: #ffffff;
+  --chart-14: #ffffff;
+  --chart-15: #ffffff;
+  --chart-16: #ffffff;
+  --chart-17: #ffffff;
+  --chart-18: #ffffff;
+  --chart-19: #ffffff;
+  --chart-20: #ffffff;
+  --chart-data-02: #fff9e1;
+  --fg-accent: #555d6d;
+  --fg-accent-contrast: #1a1c20;
+  --fg-accent-weak: #f7f8f9;
+  --fg-control-default: #ffffff;
+  --fg-control-destructive: #ff042f;
+  --fg-control-selected: #01b761;
+  --fg-danger: #ff042f;
+  --fg-danger-contrast: #790017;
+  --fg-informative: #2088fc;
+  --fg-informative-contrast: #0366d3;
+  --fg-neutral-default: #2a3038;
+  --fg-neutral-disable: #d1d3d8;
+  --fg-neutral-muted: #555d6d;
+  --fg-neutral-weak: #f3f4f5;
+  --fg-positive: #04b570;
+  --fg-positive-contrast: #007b4b;
+  --fg-primary: #01b761;
+  --fg-primary-contrast: #006c40;
+  --fg-primary-weak: #e3fff3;
+  --fg-secondary: #e40029;
+  --fg-secondary-contrast: #5e0012;
+  --fg-secondary-weak: #ffcbd4;
+  --fg-select-selected: #555d6d;
+  --fg-text-alternative: #868b94;
+  --fg-text-assistive: #b0b3ba;
+  --fg-text-contrast: #1a1c20;
+  --fg-text-default: #555d6d;
+  --fg-text-disable: #b0b3ba;
+  --fg-text-white: #ffffff;
+  --fg-toggle-default: #dcdee3;
+  --fg-toggle-hover: #d1d3d8;
+  --fg-toggle-press: #01b761;
+  --fg-toggle-press-hover: #007f4b;
+  --fg-warning: #ffce1e;
+  --fg-warning-contrast: #ff9300;
+  --fg-white: #ffffff;
+  --icon-accent: #555d6d;
+  --icon-accent-contrast: #1a1c20;
+  --icon-control-disabled: #eeeff1;
+  --icon-control-selected: #01b761;
+  --icon-control-selected-hover: #006c40;
+  --icon-danger: #ff042f;
+  --icon-danger-contrast: #790017;
+  --icon-default: #555d6d;
+  --icon-disabled: #d1d3d8;
+  --icon-informative: #2088fc;
+  --icon-informative-contrast: #0366d3;
+  --icon-muted: #868b94;
+  --icon-positive: #04b570;
+  --icon-positive-contrast: #007b4b;
+  --icon-primary: #01b761;
+  --icon-primary-contrast: #006c40;
+  --icon-secondary: #e40029;
+  --icon-warning: #ffce1e;
+  --icon-warning-contrast: #ff9300;
+  --icon-weak: #dcdee3;
+  --icon-white: #ffffff;
+  --pagination-bg: #ffffff80;
+  --pagination-bg-sticky: #ffffff;
+  --pagination-default: #1a1c2000;
+  --pagination-dot-primary-active: #01b761;
+  --pagination-dot-primary-default: #f3f4f5;
+  --pagination-dot-white-active: #ffffff;
+  --pagination-dot-white-default: #ffffff80;
+  --pagination-hover: #f7f8f9;
+  --pagination-press: #eeeff1;
+  --pagination-select: #f3f4f5;
+  --table-header: #f3f4f5;
+  --table-hover: #f7f8f9;
+  --table-select: #e3fff3;
+  --table-subtotal: #fff9e1;
+  --table-total: #ffeeb2;
+  --table-total-text: #ff7200;
+  --utility-accent: #eeeff1;
+  --utility-brand: #a4ffd8;
+  --utility-danger: #ffcad1;
+  --utility-gray: #dcdee3;
+  --utility-info: #bfdfff;
+  --utility-reversal: #1a1c2033;
+  --utility-success: #cff1e2;
+  --utility-teal: #ffffff;
+  --utility-warning: #ffeeb2;
+  --utility-white: #f7f8f9;
+  --border-divider-weight: 1px;
+}
+
+[data-product="rtb"] {
+  --badge-bg-accent: #fff2e8;
+  --badge-bg-blue: #e2f3ff;
+  --badge-bg-brand: #d0e2ff;
+  --badge-bg-brand-reversal: #0f62fe;
+  --badge-bg-brand-reversal-dark: #002d9c;
+  --badge-bg-disable: #eeeff1;
+  --badge-bg-gray: #f3f4f5;
+  --badge-bg-gray-reversal: #868b94;
+  --badge-bg-green: #e5f6ec;
+  --badge-bg-red: #feecec;
+  --badge-bg-white: #ffffff;
+  --badge-bg-white-reversal: #1a1c20;
+  --badge-bg-yellow: #fff8e2;
+  --badge-text-accent: #8a3800;
+  --badge-text-blue: #0075ff;
+  --badge-text-brand: #002d9c;
+  --badge-text-disable: #868b94;
+  --badge-text-gray: #2a3038;
+  --badge-text-green: #009153;
+  --badge-text-red: #b00c0c;
+  --badge-text-reversal: #ffffff;
+  --badge-text-white: #2a3038;
+  --badge-text-yellow: #fe9111;
+  --bg-accent: #ba4e00;
+  --bg-accent-contrast: #5e2900;
+  --bg-accent-weak: #fff2e8;
+  --bg-control-default: #ffffff;
+  --bg-control-disable: #eeeff1;
+  --bg-control-hover: #f7f8f9;
+  --bg-control-pressed: #eeeff1;
+  --bg-control-select: #edf5ff;
+  --bg-control-select-hover: #d0e2ff;
+  --bg-control-select-pressed: #a6c8ff;
+  --bg-danger: #ff4242;
+  --bg-danger-contrast: #b00c0c;
+  --bg-danger-weak: #fffafa;
+  --bg-informative: #0099ff;
+  --bg-informative-contrast: #0075ff;
+  --bg-informative-weak: #e2f3ff;
+  --bg-layer-contrast: #dcdee3;
+  --bg-layer-default: #ffffff;
+  --bg-layer-fill: #f3f4f5;
+  --bg-layer-overlay: #1a1c20b3;
+  --bg-nav-bg: #ffffff;
+  --bg-nav-bg-50: #ffffff80;
+  --bg-nav-dropdown: #f7f8f9;
+  --bg-nav-hover: #f7f8f9;
+  --bg-nav-select: #f7f8f9;
+  --bg-nav-select-hover: #f3f4f5;
+  --bg-neutral-default: #2a3038;
+  --bg-neutral-disable: #d1d3d8;
+  --bg-neutral-disable-weak: #eeeff1;
+  --bg-neutral-muted: #555d6d;
+  --bg-neutral-weak: #f3f4f5;
+  --bg-persistenttab-bg: #f7f8f9;
+  --bg-persistenttab-hover: #eeeff1;
+  --bg-positive: #17b26a;
+  --bg-positive-contrast: #009153;
+  --bg-positive-weak: #e5f6ec;
+  --bg-primary: #0f62fe;
+  --bg-primary-contrast: #002d9c;
+  --bg-primary-weak: #edf5ff;
+  --bg-radio-default: #ffffff;
+  --bg-radio-hover: #f7f8f9;
+  --bg-radio-select-hover: #edf5ff;
+  --bg-secondary: #555d6d;
+  --bg-secondary-contrast: #1a1c20;
+  --bg-secondary-weak: #f7f8f9;
+  --bg-tile: #f7f8f9;
+  --bg-warning: #ffb515;
+  --bg-warning-contrast: #fe9111;
+  --bg-warning-weak: #fff8e2;
+  --border-accent: #ba4e00;
+  --border-accent-weak: #f7f8f9;
+  --border-danger: #ff4242;
+  --border-danger-weak: #fed5d5;
+  --border-default: #dcdee3;
+  --border-disable: #d1d3d8;
+  --border-focus: #d0e2ff;
+  --border-focus-destructive: #fed5d5;
+  --border-informative: #0099ff;
+  --border-informative-weak: #b9e1ff;
+  --border-muted: #eeeff1;
+  --border-positive: #17b26a;
+  --border-positive-weak: #c1e7d1;
+  --border-primary: #0f62fe;
+  --border-secondary: #555d6d;
+  --border-strong: #868b94;
+  --border-warning: #ffb515;
+  --border-warning-weak: #ffecb5;
+  --button-accent-default: #ba4e00;
+  --button-accent-hover: #5e2900;
+  --button-accent-press: #5e2900;
+  --button-button-group-active: #0f62fe;
+  --button-button-group-default: #eeeff1;
+  --button-button-group-disable: #f7f8f9;
+  --button-button-group-hover: #dcdee3;
+  --button-button-group-pressed: #d1d3d8;
+  --button-destructive-outline-default: #ffffff;
+  --button-destructive-outline-hover: #fffafa;
+  --button-destructive-outline-pressed: #feecec;
+  --button-destructive-default: #ff4242;
+  --button-destructive-hover: #e52222;
+  --button-destructive-pressed: #b00c0c;
+  --button-disable: #d1d3d8;
+  --button-gray-active: #0f62fe;
+  --button-gray-default: #eeeff1;
+  --button-gray-disable: #f7f8f9;
+  --button-gray-hover: #dcdee3;
+  --button-gray-pressed: #d1d3d8;
+  --button-primary-outline-default: #ffffff;
+  --button-primary-outline-hover: #edf5ff;
+  --button-primary-outline-pressed: #d0e2ff;
+  --button-primary-default: #0f62fe;
+  --button-primary-hover: #002d9c;
+  --button-primary-pressed: #002d9c;
+  --button-secondary-outline-default: #ffffff;
+  --button-secondary-outline-hover: #f7f8f9;
+  --button-secondary-outline-pressed: #eeeff1;
+  --button-secondary-default: #1a1c20;
+  --button-secondary-hover: #2a3038;
+  --button-secondary-pressed: #555d6d;
+  --button-tertiary-default: #1a1c2000;
+  --button-tertiary-hover: #f3f4f5;
+  --button-tertiary-pressed: #eeeff1;
+  --chart-01: #ffffff;
+  --chart-02: #ffffff;
+  --chart-03: #ffffff;
+  --chart-04: #ffffff;
+  --chart-05: #ffffff;
+  --chart-06: #ffffff;
+  --chart-07: #ffffff;
+  --chart-08: #ffffff;
+  --chart-09: #ffffff;
+  --chart-10: #ffffff;
+  --chart-11: #ffffff;
+  --chart-12: #ffffff;
+  --chart-13: #ffffff;
+  --chart-14: #ffffff;
+  --chart-15: #ffffff;
+  --chart-16: #ffffff;
+  --chart-17: #ffffff;
+  --chart-18: #ffffff;
+  --chart-19: #ffffff;
+  --chart-20: #ffffff;
+  --chart-data-02: #ffffff;
+  --chart-data-03: #ffffff;
+  --fg-accent: #ba4e00;
+  --fg-accent-contrast: #5e2900;
+  --fg-accent-weak: #fff2e8;
+  --fg-control-default: #ffffff;
+  --fg-control-destructive: #ff4242;
+  --fg-control-selected: #0f62fe;
+  --fg-danger: #ff4242;
+  --fg-danger-contrast: #b00c0c;
+  --fg-informative: #0099ff;
+  --fg-informative-contrast: #0075ff;
+  --fg-neutral-default: #2a3038;
+  --fg-neutral-disable: #d1d3d8;
+  --fg-neutral-muted: #555d6d;
+  --fg-neutral-weak: #f3f4f5;
+  --fg-positive: #17b26a;
+  --fg-positive-contrast: #009153;
+  --fg-primary: #0f62fe;
+  --fg-primary-contrast: #002d9c;
+  --fg-primary-weak: #edf5ff;
+  --fg-secondary: #555d6d;
+  --fg-secondary-contrast: #1a1c20;
+  --fg-secondary-weak: #f7f8f9;
+  --fg-select-selected: #ba4e00;
+  --fg-text-alternative: #555d6d;
+  --fg-text-assistive: #868b94;
+  --fg-text-contrast: #1a1c20;
+  --fg-text-default: #2a3038;
+  --fg-text-disable: #868b94;
+  --fg-text-white: #ffffff;
+  --fg-toggle-default: #dcdee3;
+  --fg-toggle-hover: #d1d3d8;
+  --fg-toggle-press: #0f62fe;
+  --fg-toggle-press-hover: #0f62fe;
+  --fg-warning: #ffb515;
+  --fg-warning-contrast: #fe9111;
+  --fg-white: #ffffff;
+  --icon-accent: #5e2900;
+  --icon-accent-contrast: #5e2900;
+  --icon-control-disabled: #eeeff1;
+  --icon-control-selected: #0f62fe;
+  --icon-control-selected-hover: #002d9c;
+  --icon-danger: #ff4242;
+  --icon-danger-contrast: #b00c0c;
+  --icon-default: #555d6d;
+  --icon-disabled: #d1d3d8;
+  --icon-informative: #0099ff;
+  --icon-informative-contrast: #0075ff;
+  --icon-muted: #868b94;
+  --icon-positive: #17b26a;
+  --icon-positive-contrast: #009153;
+  --icon-primary: #0f62fe;
+  --icon-primary-contrast: #002d9c;
+  --icon-secondary: #555d6d;
+  --icon-warning: #ffb515;
+  --icon-warning-contrast: #fe9111;
+  --icon-weak: #dcdee3;
+  --icon-white: #ffffff;
+  --pagination-bg: #ffffff80;
+  --pagination-bg-sticky: #ffffff;
+  --pagination-default: #1a1c2000;
+  --pagination-dot-primary-active: #0f62fe;
+  --pagination-dot-primary-default: #f3f4f5;
+  --pagination-dot-white-active: #ffffff;
+  --pagination-dot-white-default: #ffffff80;
+  --pagination-hover: #f7f8f9;
+  --pagination-press: #eeeff1;
+  --pagination-select: #f3f4f5;
+  --table-header: #f3f4f5;
+  --table-hover: #f7f8f9;
+  --table-select: #edf5ff;
+  --table-subtotal: #f7f8f9;
+  --table-total: #eeeff1;
+  --table-total-text: #0f62fe;
+  --utility-accent: #ffb784;
+  --utility-brand: #a6c8ff;
+  --utility-danger: #fed5d5;
+  --utility-gray: #dcdee3;
+  --utility-info: #b9e1ff;
+  --utility-reversal: #1a1c2033;
+  --utility-success: #c1e7d1;
+  --utility-warning: #ffecb5;
+  --utility-white: #f7f8f9;
+  --border-divider-weight: 1px;
+}
+
+/* ============================================================
+ * 컴포넌트 모사 레이어 (피그마 실측 스펙 기준)
+ * 클래스 접두사: .mdl-
+ * ============================================================ */
+* { box-sizing: border-box; }
+body {
+  margin: 0; font-family: var(--font-family);
+  background: var(--bg-layer-default); color: var(--fg-text-default, #555d6d);
+  font-size: var(--font-size-xs, 14px); line-height: 1.57;
+}
+
+/* 타이포 — Headline/Subtitle/Body 체계 (Display/Heading 아님) */
+.mdl-h1{font-size:56px;line-height:90px;font-weight:700}
+.mdl-h2{font-size:48px;line-height:77px;font-weight:700}
+.mdl-h3{font-size:40px;line-height:64px;font-weight:700}
+.mdl-h4{font-size:32px;line-height:51px;font-weight:700}
+.mdl-h5{font-size:28px;line-height:45px;font-weight:700}
+.mdl-h6{font-size:24px;line-height:38px;font-weight:700}
+.mdl-sub1{font-size:20px;line-height:32px;font-weight:700}
+.mdl-sub2{font-size:16px;line-height:26px;font-weight:700}
+.mdl-sub3{font-size:16px;line-height:26px;font-weight:600}
+.mdl-sub5{font-size:14px;line-height:22px;font-weight:600}
+.mdl-body1{font-size:16px;line-height:26px}
+.mdl-body2{font-size:14px;line-height:22px}
+.mdl-body3{font-size:12px;line-height:19px}
+
+/* 버튼 — Large 40 / Medium 32 / Small 24, density=default */
+.mdl-btn{display:inline-flex;align-items:center;justify-content:center;gap:6px;
+  border:1px solid transparent;border-radius:var(--radius-sm,6px);cursor:pointer;
+  font-family:inherit;font-weight:600;font-size:14px;height:32px;padding:0 var(--space-250,16px);
+  background:var(--bg-primary);color:#fff;transition:filter .12s}
+.mdl-btn:hover{filter:brightness(.94)}
+.mdl-btn:disabled{opacity:.4;cursor:not-allowed}
+.mdl-btn--lg{height:40px;font-size:16px;padding:0 var(--space-300,20px)}
+.mdl-btn--sm{height:24px;font-size:12px;padding:0 var(--space-150,8px)}
+.mdl-btn--outline{background:transparent;color:var(--fg-primary);border-color:var(--fg-primary)}
+.mdl-btn--secondary{background:var(--bg-primary-weak,var(--bg-tile));color:var(--fg-primary)}
+.mdl-btn--gray{background:var(--bg-layer-fill,#f3f4f5);color:var(--fg-text-default,#555d6d)}
+.mdl-btn--secondary-outline{background:#fff;color:var(--fg-text-default,#555d6d);border-color:var(--border-default,#dcdee3)}
+.mdl-btn--destructive{background:var(--bg-negative,#e5483f);color:#fff}
+.mdl-btn--dark{background:var(--button-secondary-default,#1a1c20)} /* 조회·검색 주 버튼(HomeDot 실화면 기준) */
+.mdl-btn--dark:hover{background:var(--button-secondary-hover,#2a3038);filter:none}
+.mdl-btn--block{width:100%}
+
+/* 인풋 — Large 40px, 라벨 위 */
+.mdl-field{display:flex;flex-direction:column;gap:var(--space-150,8px)}
+.mdl-field>label{font-size:14px;line-height:22px;font-weight:600;color:var(--fg-text-default,#555d6d)}
+.mdl-input,.mdl-select{height:40px;padding:0 var(--space-250,16px);font:inherit;font-size:14px;
+  border:1px solid var(--border-default,#dcdee3);border-radius:var(--radius-sm,6px);
+  background:#fff;color:var(--fg-text-default,#555d6d);width:100%}
+.mdl-input::placeholder{color:var(--fg-text-assistive,#9aa1ad)}
+.mdl-input:focus,.mdl-select:focus{outline:none;border-color:var(--border-primary,var(--bg-primary));
+  box-shadow:0 0 0 2px color-mix(in srgb,var(--bg-primary) 20%,transparent)}
+.mdl-input--error{border-color:var(--border-negative,#e5483f)}
+.mdl-msg{font-size:12px;line-height:19px}
+.mdl-msg--error{color:var(--fg-negative,#e5483f)}
+.mdl-msg--success{color:var(--fg-positive,#01b761)}
+
+/* 뱃지 */
+.mdl-badge{display:inline-flex;align-items:center;height:23px;padding:0 8px;border-radius:var(--radius-xs,4px);
+  font-size:12px;font-weight:600;background:var(--bg-primary-weak,#eee);color:var(--fg-primary)}
+.mdl-badge--success{background:color-mix(in srgb,var(--fg-positive,#01b761) 12%,#fff);color:var(--fg-positive-contrast,#028a4b)}
+.mdl-badge--warning{background:color-mix(in srgb,var(--fg-warning,#f5b40a) 15%,#fff);color:var(--fg-warning-contrast,#b07f00)}
+.mdl-badge--error{background:color-mix(in srgb,var(--fg-negative,#e5483f) 12%,#fff);color:var(--fg-negative,#d02c2c)}
+.mdl-badge--gray{background:var(--bg-layer-fill,#f3f4f5);color:var(--fg-text-alternative,#6b7381)}
+
+/* 필터 패널 — bg/tile, 보더리스 */
+.mdl-panel{background:var(--bg-tile,#f7f8f9);border-radius:var(--radius-md,8px);padding:var(--space-250,16px)}
+
+/* 테이블 — 세로선은 제품 모드가 자동 제어(--border-divider-weight) */
+.mdl-table{width:100%;border-collapse:collapse;background:#fff;font-size:14px}
+.mdl-table th{height:40px;background:var(--table-header,var(--bg-tile,#f7f8f9));
+  font-weight:600;text-align:left;padding:0 var(--space-250,16px);color:var(--fg-text-alternative,#6b7381);
+  border-bottom:1px solid var(--border-default,#dcdee3)}
+.mdl-table td{height:52px;padding:0 var(--space-250,16px);border-bottom:1px solid var(--border-muted,#eceef0)}
+.mdl-table th:not(:first-child){border-left:1px solid var(--border-default,#dcdee3)} /* 헤더 구분선은 상시 */
+.mdl-table td:not(:first-child){border-left:var(--border-divider-weight,0) solid var(--border-muted,#eceef0)} /* 바디만 제품 모드 제어 */
+.mdl-table tbody tr:hover{background:var(--table-hover,#fafafa)}
+.mdl-table tbody tr.is-selected{background:color-mix(in srgb,var(--bg-primary) 7%,#fff)}
+
+/* 탭 */
+.mdl-tabs{display:flex;gap:var(--space-350,24px);border-bottom:1px solid var(--border-default,#dcdee3)}
+.mdl-tab{padding:10px 2px;font-size:14px;font-weight:600;color:var(--fg-text-assistive,#9aa1ad);
+  border:none;background:none;cursor:pointer;border-bottom:2px solid transparent;margin-bottom:-1px}
+.mdl-tab.is-active{color:var(--fg-primary);border-bottom-color:var(--fg-primary)}
+
+/* GNB 셸 (제품 공통 근사) */
+.mdl-gnb{height:56px;display:grid;grid-template-columns:1fr auto 1fr;align-items:center;
+  gap:var(--space-450,32px);padding:0 var(--space-450,32px);
+  background:#fff;border-bottom:1px solid var(--border-default,#dcdee3)}
+.mdl-gnb__logo{font-weight:800;font-size:17px;color:var(--fg-primary);display:flex;align-items:center;gap:8px;
+  justify-self:start;white-space:nowrap}
+.mdl-gnb__menu{display:flex;gap:var(--space-400,28px);justify-self:center} /* 1fr-auto-1fr 그리드의 중앙 열 — 로고 길이와 무관하게 뷰포트 중앙 고정 */
+.mdl-gnb>*:last-child{justify-self:end}
+.mdl-gnb__menu a{font-size:14px;font-weight:600;color:var(--fg-text-default,#555d6d);text-decoration:none}
+.mdl-gnb__menu a.is-active{color:var(--fg-primary)}
+
+/* 페이지네이션 */
+.mdl-pagination{display:flex;gap:4px;justify-content:center;align-items:center;padding:var(--space-250,16px)}
+.mdl-page{min-width:32px;height:32px;border:none;background:none;border-radius:var(--radius-sm,6px);
+  font:inherit;font-size:14px;cursor:pointer;color:var(--fg-text-alternative,#6b7381)}
+.mdl-page.is-active{background:var(--bg-primary-weak,#eee);color:var(--fg-primary);font-weight:700}
+
+/* ============================================================
+ * 앱 셸 컴포넌트 (HomeDot 프로토타입에서 표준화)
+ * ============================================================ */
+/* GNB 변형: 좌측 그룹형 (HomeDot 등 — 로고+바로가기 좌, 셀렉트들 우) */
+.mdl-gnb--grouped{grid-template-columns:auto 1fr auto;position:sticky;top:0;z-index:20}
+.mdl-gnb__group{display:flex;align-items:center;gap:var(--space-350)}
+.mdl-gnb__group--right{gap:var(--space-150)}
+.mdl-drop{display:inline-flex;align-items:center;gap:var(--space-100);height:32px;padding:0 var(--space-200);
+  border:1px solid var(--border-default);border-radius:var(--radius-sm);background:var(--bg-control-default);
+  font-size:14px;font-weight:600;color:var(--fg-text-default);cursor:pointer;white-space:nowrap;font-family:inherit}
+.mdl-drop:hover{background:var(--bg-control-hover)}
+.mdl-drop--plain{border-color:transparent;background:transparent}
+.mdl-drop--plain:hover{background:var(--bg-nav-hover)}
+.mdl-drop--labeled{height:40px;padding:0 var(--space-250);gap:var(--space-150);min-width:180px;
+  justify-content:space-between} /* GNB 라벨 프리픽스형 셀렉트: "회사 | 값 ▾" */
+.mdl-drop--labeled .lbl{color:var(--fg-text-assistive);font-weight:500}
+
+/* 페이지 탭 바 (HomeDot) */
+.mdl-tabbar{display:flex;align-items:flex-end;height:44px;padding:0 var(--space-350);gap:var(--space-050);
+  background:var(--bg-layer-default);border-bottom:1px solid var(--border-default);
+  position:sticky;top:56px;z-index:19} /* 흰 배경 브라우저 탭형 (HomeDot 실화면) */
+.mdl-ptab{display:inline-flex;align-items:center;gap:var(--space-150);height:36px;padding:0 var(--space-250);
+  border:1px solid transparent;border-bottom:none;border-radius:var(--radius-sm) var(--radius-sm) 0 0;
+  font-size:13px;font-weight:600;color:var(--fg-text-alternative);cursor:pointer;white-space:nowrap;
+  margin-bottom:-1px}
+.mdl-ptab:hover{background:var(--bg-nav-hover)}
+.mdl-ptab.is-active{background:var(--bg-layer-default);color:var(--fg-primary);
+  border-color:var(--border-default);box-shadow:0 2px 0 0 var(--bg-layer-default),0 -2px 0 0 var(--bg-primary) inset}
+.mdl-ptab .x{color:var(--fg-text-assistive);font-size:14px;line-height:1}
+.mdl-tabbar__end{margin-left:auto;font-size:13px;color:var(--fg-text-alternative);cursor:pointer}
+
+/* 본문 셸: 사이드네브 + 메인 */
+.mdl-body{display:flex;align-items:stretch;min-height:calc(100vh - 96px)}
+.mdl-sidenav{width:216px;flex:none;background:var(--bg-nav-bg);border-right:1px solid var(--border-default);
+  display:flex;flex-direction:column;padding:var(--space-250) var(--space-150)}
+.mdl-sidenav__menu{display:flex;flex-direction:column;gap:var(--space-050)}
+.mdl-sidenav__menu a{display:flex;align-items:center;gap:var(--space-200);height:40px;padding:0 var(--space-200);
+  border-radius:var(--radius-sm);font-size:14px;font-weight:600;color:var(--fg-text-default);text-decoration:none}
+.mdl-sidenav__menu a:hover{background:var(--bg-nav-hover)}
+.mdl-sidenav__menu a.is-active{background:var(--bg-control-select);color:var(--fg-primary)}
+.mdl-sidenav__menu svg{width:18px;height:18px;flex:none}
+.mdl-sidenav__foot{margin-top:auto;padding:var(--space-250) var(--space-200) 0;
+  border-top:1px solid var(--border-muted);font-size:12px;line-height:19px;color:var(--fg-text-assistive)}
+.mdl-sidenav__foot a{color:var(--fg-text-alternative);text-decoration:none;display:block;margin-bottom:var(--space-100)}
+.mdl-main{flex:1;min-width:0;padding:var(--space-350) var(--space-450) var(--space-650);
+  background:var(--bg-layer-default)}
+
+/* 브레드크럼 + 페이지 타이틀 행 */
+.mdl-crumb{display:flex;gap:var(--space-150);font-size:12px;color:var(--fg-text-assistive);
+  margin-bottom:var(--space-150)}
+.mdl-crumb b{color:var(--fg-text-alternative);font-weight:600}
+.mdl-titlerow{display:flex;align-items:center;justify-content:space-between;gap:var(--space-250);
+  margin:0 0 var(--space-300)}
+.mdl-titlerow h1{margin:0}
+
+/* 사이드 드로어 + 스크림 */
+.mdl-scrim{position:fixed;inset:0;background:var(--bg-layer-overlay);opacity:0;pointer-events:none;
+  transition:opacity .16s;z-index:30}
+.mdl-scrim.is-open{opacity:1;pointer-events:auto}
+.mdl-drawer{position:fixed;top:0;right:0;height:100%;width:420px;max-width:92vw;background:var(--bg-layer-default);
+  box-shadow:var(--shadow-elevation-x-large);transform:translateX(100%);transition:transform .2s;z-index:31;
+  display:flex;flex-direction:column}
+.mdl-drawer.is-open{transform:none}
+.mdl-drawer__head{display:flex;align-items:center;justify-content:space-between;gap:var(--space-250);
+  padding:var(--space-300) var(--space-350);border-bottom:1px solid var(--border-default)}
+.mdl-drawer__body{padding:var(--space-300) var(--space-350);overflow:auto;flex:1}
+.mdl-drawer__foot{padding:var(--space-250) var(--space-350);border-top:1px solid var(--border-default);
+  display:flex;gap:var(--space-150)}
+
+/* 토스트 */
+.mdl-toast{position:fixed;left:50%;bottom:32px;transform:translate(-50%,16px);opacity:0;pointer-events:none;
+  background:var(--bg-neutral-default);color:var(--fg-text-white);font-size:14px;font-weight:600;
+  padding:var(--space-200) var(--space-350);border-radius:var(--radius-f-c);z-index:40;transition:.18s}
+.mdl-toast.is-open{opacity:1;transform:translate(-50%,0)}
+
+/* 상태 요약 칩 */
+.mdl-stat{flex:1;border:1px solid var(--border-muted);border-radius:var(--radius-md);
+  padding:var(--space-200) var(--space-250);background:var(--bg-layer-default);cursor:pointer;
+  text-align:left;font-family:inherit}
+.mdl-stat:hover{background:var(--bg-control-hover)}
+.mdl-stat.is-active{border-color:var(--border-primary);background:var(--bg-control-select)}
+.mdl-stat span{display:block;font-size:12px;line-height:19px;color:var(--fg-text-alternative)}
+.mdl-stat b{font-size:20px;line-height:32px;color:var(--fg-text-contrast)}
+.mdl-stat.is-active b{color:var(--fg-primary)}
+
+/* 진행상태 프로그레스 바 (HomeDot 통합업무계획 실화면 기준) */
+.mdl-progress{display:inline-flex;align-items:center;gap:var(--space-150);font-size:13px}
+.mdl-progress__track{width:120px;height:6px;border-radius:var(--radius-f-c);background:var(--bg-layer-fill)}
+.mdl-progress__bar{height:100%;border-radius:var(--radius-f-c);background:var(--bg-neutral-muted)}
+.mdl-progress b{color:var(--fg-informative-contrast);font-weight:700}
+.mdl-dot{display:inline-flex;align-items:center;gap:4px;font-size:12px;color:var(--fg-text-alternative)}
+.mdl-dot::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--fg-text-assistive)}
+.mdl-dot--wait::before{background:var(--bg-warning)}
+.mdl-dot--doing::before{background:var(--bg-informative)}
+.mdl-dot--done::before{background:var(--bg-positive)}
+.mdl-dot--excl::before{background:var(--bg-danger)}
+
+/* 제품 로고 (CORE 마스터 homeDot_Logo에서 추출한 원본 SVG) */
+.mdl-logo-img{display:inline-block;background:center/contain no-repeat}
+.mdl-logo-img--homedot{width:170px;height:24px;background-image:url("data:image/svg+xml,%3Csvg width=%22300%22 height=%2243%22 viewBox=%220 0 300 43%22 fill=%22none%22 xmlns=%22http://www.w3.org/2000/svg%22%3E %3Cpath d=%22M24.5033 22.9317C24.5033 18.6823 25.8759 14.7542 28.1978 11.5562L19.6698 4.66374C18.1073 3.17426 15.6395 3.17426 14.077 4.66374L1.25585 15.0316C0.452706 15.791 0 16.857 0 17.9668V38.2645C0 40.5133 1.81073 42.3241 4.05954 42.3241H29.7165C31.5856 42.3241 33.1481 41.0682 33.6154 39.3597C28.154 35.9281 24.5325 29.8534 24.5325 22.9317H24.5033Z%22 fill=%22%238971FF%22/%3E %3Cpath d=%22M43.8961 3.54138C37.4417 3.54138 31.7175 6.71015 28.1982 11.5582L32.4914 15.0337C33.2946 15.793 33.7473 16.859 33.7473 17.9688V38.2665C33.7473 38.6462 33.6889 39.0113 33.6013 39.3617C36.5802 41.2455 40.114 42.3261 43.9107 42.3261C54.6145 42.3261 63.3031 33.6521 63.3031 22.9337C63.3031 12.2154 54.6291 3.54138 43.9107 3.54138H43.8961Z%22 fill=%22%2323D35E%22/%3E %3Cpath d=%22M33.7308 33.1107V17.9677C33.7308 16.8579 33.2781 15.7919 32.475 15.0326L28.1818 11.5571C25.86 14.7551 24.4873 18.6833 24.4873 22.9326C24.4873 29.8543 28.1234 35.929 33.5702 39.3606C33.6724 39.0102 33.7162 38.6451 33.7162 38.2654V33.1107H33.7308Z%22 fill=%22white%22/%3E %3Cpath d=%22M73.9136 0H80.9085V12.694L79.1234 20.403H80.1284C81.8474 14.77 85.1663 11.861 89.9662 11.861C96.6703 11.861 100.108 15.894 100.108 23.603V42.3399H93.1133V23.9071C93.1133 19.6361 91.2753 17.4411 87.5993 17.4411C83.5134 17.4411 80.8953 20.5881 80.8953 25.6789V42.3266H73.9004V0H73.9136Z%22 fill=%22%238971FF%22/%3E %3Cpath d=%22M136.141 12.6922H143.136L141.351 20.4012H142.356C143.837 14.8872 146.627 11.8591 151.255 11.8591C155.407 11.8591 158.845 14.7682 158.845 20.4012H159.85C161.331 14.1732 164.835 11.8591 169.211 11.8591C175.201 11.8591 178.401 15.707 178.401 23.059V42.3248H171.406V23.7069C171.406 19.621 169.806 17.4789 166.726 17.4789C162.931 17.4789 160.802 20.5069 160.802 25.3069V42.3248H153.807V23.7069C153.807 19.621 151.797 17.4789 149.007 17.4789C145.159 17.4789 143.136 20.4408 143.136 25.3069V42.3248H136.141V12.6789V12.6922Z%22 fill=%22%238971FF%22/%3E %3Cpath d=%22M183.716 36.8769C181.931 34.391 181.045 31.125 181.045 27.211C181.045 23.297 182.235 19.859 183.954 17.3731C186.44 13.75 190.473 11.8591 195.154 11.8591C203.815 11.8591 208.734 17.3202 208.734 26.6159V28.9828H188.04C188.278 30.9398 188.754 32.5398 189.64 33.7828C190.883 35.5679 192.787 36.5728 195.563 36.5728C198.591 36.5728 200.839 35.2108 201.725 32.6588H208.72C207.715 38.3447 202.492 42.3248 195.735 42.3248C190.102 42.3248 186.135 40.4339 183.702 36.8769H183.716ZM201.686 23.9581C201.514 19.7532 199.2 17.4921 195.22 17.4921C192.906 17.4921 190.896 18.4971 189.587 20.335C188.939 21.34 188.463 22.53 188.225 23.9449H201.686V23.9581Z%22 fill=%22%238971FF%22/%3E %3Cpath d=%22M214.038 37.1697C212.319 34.6177 211.367 31.1797 211.367 27.0938C211.367 23.0079 212.319 19.57 214.038 17.0179C216.352 13.699 219.843 11.861 224.114 11.861C229.271 11.861 232.828 14.8229 234.428 20.403H235.433L233.648 12.694V0H240.643V42.3266H233.648L235.433 33.7846H234.428C232.828 39.3515 229.271 42.3266 224.114 42.3266C219.843 42.3266 216.352 40.4886 214.038 37.1697ZM220.2 33.6392C221.509 35.53 223.585 36.5482 226.124 36.5482C228.663 36.5482 230.805 35.5433 232.114 33.6392C233.185 32.1582 233.78 29.6326 233.78 27.0806C233.78 24.5285 233.185 21.8575 232.114 20.3766C230.805 18.4857 228.729 17.4675 226.124 17.4675C223.519 17.4675 221.496 18.4724 220.2 20.3766C219.129 21.8575 218.481 24.5285 218.481 27.0806C218.481 29.6326 219.129 32.145 220.2 33.6392Z%22 fill=%22%238971FF%22/%3E %3Cpath d=%22M279.663 31.9604V17.4416H273.977V11.5177H279.663V6.47981L286.658 3.21375V11.5177H300V17.4416H286.658V31.8943C286.658 34.8562 287.901 36.2182 289.805 36.2182C292.119 36.2182 293.005 34.7901 293.005 31.2332V27.0811H300V31.3522C300 38.2281 296.205 42.314 289.805 42.314C282.982 42.314 279.663 38.8099 279.663 31.934V31.9604Z%22 fill=%22%238971FF%22/%3E %3Cpath d=%22M258.637 11.6638C250.174 11.6638 243.298 18.5265 243.298 27.0024C243.298 35.4783 250.161 42.341 258.637 42.341C267.113 42.341 273.975 35.4783 273.975 27.0024C273.975 18.5265 267.113 11.6638 258.637 11.6638ZM258.637 36.5494C253.361 36.5494 249.077 32.2652 249.077 26.9892C249.077 21.7132 253.361 17.429 258.637 17.429C263.913 17.429 268.197 21.7132 268.197 26.9892C268.197 32.2652 263.913 36.5494 258.637 36.5494Z%22 fill=%22%238971FF%22/%3E %3Cpath d=%22M118.13 11.6638C109.667 11.6638 102.791 18.5265 102.791 27.0024C102.791 35.4783 109.654 42.341 118.13 42.341C126.605 42.341 133.468 35.4783 133.468 27.0024C133.468 18.5265 126.605 11.6638 118.13 11.6638ZM118.13 36.5494C112.854 36.5494 108.569 32.2652 108.569 26.9892C108.569 21.7132 112.854 17.429 118.13 17.429C123.406 17.429 127.69 21.7132 127.69 26.9892C127.69 32.2652 123.406 36.5494 118.13 36.5494Z%22 fill=%22%238971FF%22/%3E %3C/svg%3E")}
+.mdl-logo-img--homedot-symbol{width:24px;height:24px;background-image:url("data:image/svg+xml,%3Csvg width=%2272%22 height=%2272%22 viewBox=%220 0 72 72%22 fill=%22none%22 xmlns=%22http://www.w3.org/2000/svg%22%3E %3Cpath d=%22M28.773 36.3903C28.773 32.0942 30.1608 28.1228 32.5082 24.8896L23.8863 17.9213C22.3067 16.4154 19.8117 16.4154 18.232 17.9213L5.26968 28.4033C4.45769 29.171 4 30.2487 4 31.3708V51.8919C4 54.1655 5.83066 55.9962 8.10423 55.9962H34.0436C35.9333 55.9962 37.513 54.7265 37.9855 52.9992C32.4639 49.5298 28.8026 43.3882 28.8026 36.3903H28.773Z%22 fill=%22%238971FF%22/%3E %3Cpath d=%22M48.3792 16.7865C41.8538 16.7865 36.0665 19.9901 32.5085 24.8916L36.849 28.4053C37.661 29.173 38.1187 30.2507 38.1187 31.3728V51.8939C38.1187 52.2778 38.0596 52.6469 37.971 53.0012C40.9828 54.9057 44.5555 55.9982 48.394 55.9982C59.2156 55.9982 67.9999 47.2287 67.9999 36.3923C67.9999 25.556 59.2304 16.7865 48.394 16.7865H48.3792Z%22 fill=%22%2323D35E%22/%3E %3Cpath d=%22M38.1021 46.6815V31.3718C38.1021 30.2498 37.6444 29.172 36.8324 28.4043L32.492 24.8906C30.1446 28.1238 28.7568 32.0952 28.7568 36.3914C28.7568 43.3892 32.4329 49.5308 37.9397 53.0002C38.043 52.6459 38.0873 52.2768 38.0873 51.893V46.6815H38.1021Z%22 fill=%22white%22/%3E %3C/svg%3E")}
+
+/* 셸 보강: 사이드네브 그룹 라벨 + 테이블 오버플로 컨테이너 */
+.mdl-sidenav__group{font-size:12px;line-height:19px;font-weight:600;color:var(--fg-text-assistive);
+  padding:var(--space-250) var(--space-200) var(--space-100)}
+.mdl-tablewrap{border-top:1px solid var(--border-default);border-bottom:1px solid var(--border-default);
+  overflow-x:auto} /* 컬럼이 넘치면 프레임을 깨지 말고 내부 스크롤 */
+.mdl-tablewrap .mdl-table{min-width:100%}
+html,body{margin:0;padding:0} /* 풀블리드 — body 외곽 여백/프레임 금지 */
+
+/* ── 버튼 크기 위계 (필수 규칙) ──
+ * 페이지 주 액션(타이틀 행: 등록·배포계획 등) = .mdl-btn .mdl-btn--lg  ← 화면 최우선, 가장 큼
+ * 타이틀 행 보조(엑셀 다운로드 등)          = .mdl-btn--lg .mdl-btn--secondary-outline
+ * 필터 조회                                 = .mdl-btn--dark (기본 32px — 주 액션보다 커서는 안 됨)
+ * 필터 초기화                               = .mdl-btn--gray (기본 32px)
+ * 인라인/테이블 내부                        = .mdl-btn--sm
+ */
